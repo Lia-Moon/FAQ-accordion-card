@@ -33,8 +33,7 @@ html {
 
 .faq {
     display: flex;
-    width: 70%;
-    /* height: 300px; */
+    width: fit-content;
     margin: 10% auto;
     gap: 30px;
     align-items: center;
@@ -70,6 +69,7 @@ html {
 .faq__questions h2, .faq__questions h3, .faq__questions h4, .faq__questions h5, .faq__questions h6 {
     color: var(--very_dark_grayish_blue);
     margin: 15px 0;
+    cursor: pointer;
 }
 
 .faq__questions--one, .faq__questions--two, .faq__questions--three, .faq__questions--four, .faq__questions--five {
@@ -86,6 +86,7 @@ html {
     width: 10px;
     height: 7px;
     place-self: center;
+    cursor: pointer;
 }
 
 .faq__questions p {
@@ -103,5 +104,8 @@ html {
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: var(--very_dark_desaturated_blue);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 10px;
 }
