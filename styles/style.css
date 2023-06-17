@@ -82,16 +82,32 @@ html {
     gap: 20px;
 }
 
+.faq__questions--one--question.selected, .faq__questions--two--question.selected, .faq__questions--three--question.selected, .faq__questions--four--question.selected, .faq__questions--five--question.selected {
+    font-weight: 700;
+}
+
 .faq__questions--one--question img, .faq__questions--two--question img, .faq__questions--three--question img, .faq__questions--four--question img, .faq__questions--five--question img {
     width: 10px;
     height: 7px;
     place-self: center;
     cursor: pointer;
+    transform: rotate(0deg);
+}
+
+.faq__questions--one--arrow.selected, .faq__questions--two--arrow.selected, .faq__questions--three--arrow.selected, .faq__questions--four--arrow.selected, .faq__questions--five--arrow.selected {
+    transform: rotate(180deg);
 }
 
 .faq__questions p {
     color: var(---dark_grayish_blue);
     display: none;
+}
+
+.faq__questions--one--answer.display, .faq__questions--two--answer.display, .faq__questions--three--answer.display, .faq__questions--four--answer.display, .faq__questions--five--answer.display {
+    display: block;
+    width: 315px;
+    padding-bottom: 10px;
+    line-height: 15px;
 }
 
 .attribution {
