@@ -18,26 +18,30 @@
     ---dark_grayish_blue: hsl(240, 6%, 50%);
     /* #### Dividers */
     --light_grayish_blue: hsl(240, 5%, 91%);
+    --white: white;
 }
 
 html {
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 12px;
-    background-image: linear-gradient(var(--soft_violet), var(--soft_blue));
     height: 100%;
+    background-image: linear-gradient(var(--soft_violet), var(--soft_blue));
     background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .faq {
     display: flex;
-    width: 60%;
-    height: 300px;
-    margin: 20% auto;
+    width: 70%;
+    /* height: 300px; */
+    margin: 10% auto;
     gap: 30px;
     align-items: center;
-    background-color: var(--light_grayish_blue);
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px var(--very_dark_grayish_blue);
 }
 
 .faq__images {
@@ -53,16 +57,40 @@ html {
 
 .faq__questions {
     margin: 0 20px;
-    width: 50%;
 }
 
 .faq__questions h1{
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 27px;
     font-weight: 700;
+    color: black;
+    padding: 20px 0;
 }
 
-footer {
+.faq__questions h2, .faq__questions h3, .faq__questions h4, .faq__questions h5, .faq__questions h6 {
+    color: var(--very_dark_grayish_blue);
+    margin: 15px 0;
+}
+
+.faq__questions--one, .faq__questions--two, .faq__questions--three, .faq__questions--four, .faq__questions--five {
+    border-bottom: 1px solid var(--light_grayish_blue);
+}
+
+.faq__questions--one--question, .faq__questions--two--question, .faq__questions--three--question, .faq__questions--four--question, .faq__questions--five--question {
+    display: grid;
+    grid-template-columns: 300px 10px;
+    gap: 20px;
+}
+
+.faq__questions--one--question img, .faq__questions--two--question img, .faq__questions--three--question img, .faq__questions--four--question img, .faq__questions--five--question img {
+    width: 10px;
+    height: 7px;
+    place-self: center;
+}
+
+.faq__questions p {
+    color: var(---dark_grayish_blue);
+    display: none;
 }
 
 .attribution {
