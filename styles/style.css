@@ -35,7 +35,7 @@ html {
     display: flex;
     width: fit-content;
     margin: 10% auto;
-    gap: 30px;
+    gap: 130px;
     align-items: center;
     background-color: var(--white);
     padding: 20px;
@@ -47,11 +47,35 @@ html {
     display: flex;
     flex-direction: row;
     justify-self: end;
+    position: relative;
 }
 
+.faq__images--pattern {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    z-index: 0;
+}
+
+.faq__images--pattern img {
+    width: 500px;
+}
 
 .faq__images--woman {
+    position: relative;
+    right: 100px;
+    top: 0;
     width: 300px;
+    z-index: 1;
+}
+
+.faq__images--box {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 300px;
+    z-index: 2;
 }
 
 .faq__questions {
@@ -82,14 +106,6 @@ html {
     gap: 20px;
 }
 
-.faq__questions--one.selected h2, .faq__questions--two.selected h3, .faq__questions--three.selected h4, .faq__questions--four.selected h5, .faq__questions--five.selected h6 {
-    font-weight: 700;
-}
-
-.faq__questions--one.selected img, .faq__questions--two.selected img, .faq__questions--three.selected img, .faq__questions--four.selected img, .faq__questions--five.selected img {
-    transform: rotate(180deg);
-}
-
 .faq__questions--one--question img, .faq__questions--two--question img, .faq__questions--three--question img, .faq__questions--four--question img, .faq__questions--five--question img {
     width: 10px;
     height: 7px;
@@ -99,6 +115,14 @@ html {
 
 .faq__questions p {
     display: none;
+}
+
+.faq__questions--one.selected h2, .faq__questions--two.selected h3, .faq__questions--three.selected h4, .faq__questions--four.selected h5, .faq__questions--five.selected h6 {
+    font-weight: 700;
+}
+
+.faq__questions--one.selected img, .faq__questions--two.selected img, .faq__questions--three.selected img, .faq__questions--four.selected img, .faq__questions--five.selected img {
+    transform: rotate(180deg);
 }
 
 .faq__questions--one.selected p, .faq__questions--two.selected p, .faq__questions--three.selected p, .faq__questions--four.selected p, .faq__questions--five.selected p {
