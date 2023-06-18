@@ -169,7 +169,7 @@ html {
 @media only screen and (max-width: 860px) {
     .faq {
         flex-direction: column;
-        margin-top: 230px;
+        margin-top: 200px;
         gap: 0px;
         padding: 40px 3px;
     }
