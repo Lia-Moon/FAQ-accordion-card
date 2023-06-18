@@ -169,9 +169,9 @@ html {
 @media only screen and (max-width: 860px) {
     .faq {
         flex-direction: column;
-        margin-top: 40%;
+        margin-top: 230px;
         gap: 0px;
-        padding: 40px 8px;
+        padding: 40px 3px;
     }
 
     .faq__images {
