@@ -35,10 +35,10 @@ html {
     display: flex;
     width: fit-content;
     margin: 10% auto;
-    gap: 130px;
+    gap: 10px;
     align-items: center;
     background-color: var(--white);
-    padding: 20px;
+    padding: 40px 20px;
     border-radius: 20px;
     box-shadow: 0px 10px 30px var(--very_dark_grayish_blue);
 }
@@ -52,28 +52,44 @@ html {
 
 .faq__images--pattern {
     position: absolute;
-    right: 0;
-    top: 0;
-    width: 50%;
+    right: 20px;
+    top: -40px;
+    height: 440px;
+    width: 400px;
     z-index: 0;
+    overflow: hidden;
 }
 
 .faq__images--pattern img {
-    width: 500px;
+    position: relative;
+    right: 490px;
+    top: -280px;
+    width: 880px;
+}
+
+.faq__images--pattern--mobile, .faq__images--woman--mobile {
+    display: none;
 }
 
 .faq__images--woman {
     position: relative;
-    right: 100px;
+    right: 20px;
     top: 0;
-    width: 300px;
+    width: 400px;
     z-index: 1;
+    overflow-x: hidden;
+}
+
+.faq__images--woman img {
+    position: relative;
+    right: 80px;
+    top: 0;
 }
 
 .faq__images--box {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 213px;
+    top: 135px;
     width: 300px;
     z-index: 2;
 }
@@ -147,4 +163,48 @@ html {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 10px;
+}
+
+/* Devices (phones, 860px and down) -----------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 860px) {
+    .faq {
+        flex-direction: column;
+        margin: 30% auto;
+        gap: 0px;
+    }
+
+    .faq__images {
+        justify-self: center;
+        position: relative;
+        height: auto;
+        top: -50px;
+    }
+
+    .faq__images--pattern, .faq__images--box, .faq__images--woman {
+        display: none;
+    }
+
+    .faq__images--pattern--mobile {
+        display: flex;
+        position: relative;
+        width: 300px;
+        top: 10px;
+        z-index: 0;
+    }
+
+    .faq__images--pattern--mobile img {
+        width: 300px;
+    }
+
+    .faq__images--woman--mobile {
+        display: flex;
+        position: absolute;
+        width: 300px;
+        top: -130px;
+        z-index: 1;
+    }
+
+    .faq__questions h1 {
+        text-align: center;
+    }
 }
